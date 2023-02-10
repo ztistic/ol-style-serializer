@@ -1,10 +1,10 @@
 {
   "name": "ol-style-serializer",
-  "version": "1.0.0",
-  "description": "This package can serialize OpenLayers style into javascript object, and deserialize javascript object into OpenLayers style.",
-  "repository": "https://github.com/ztistic/ol-style-serializer",
+  "version": "1.0.1",
+  "description": "This package can serialize OpenLayers style instances into javascript objects, and deserialize javascript objects into OpenLayers style instances.",
+  "repository": "https://github.com/ztistic/ol-style-serializer.git",
   "author": {
-    "name": "EFT Ztistic",
+    "name": "EFT ztistic",
     "url": "https://github.com/ztistic"
   },
   "license": "MIT",
