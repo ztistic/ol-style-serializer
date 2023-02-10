@@ -1,4 +1,10 @@
-import { Circle as CircleStyle, Fill, Icon, RegularShape, Stroke, Style, Text } from 'ol/style'
+import Style from "ol/style/Style.js"
+import Fill from "ol/style/Fill.js"
+import Stroke from "ol/style/Stroke.js"
+import Text from "ol/style/Text.js"
+import Icon from "ol/style/Icon.js"
+import RegularShape from "ol/style/RegularShape.js"
+import CircleStyle from "ol/style/Circle.js"
 
 /**
  * @typedef StyleLike
@@ -393,6 +399,7 @@ export function serializeStyle(olStyle) {
  * @return {Style}
  */
 export function constructStyle(styleLike) {
+  if (!styleLike) return undefined
   const { image, fill, stroke, text } = styleLike
   return tryConstruct(Style, {
     fill: constructFill(fill),
@@ -406,7 +413,7 @@ export function constructStyle(styleLike) {
  * remove the null/undefined-valued 1 depth property from an object.
  */
 function trimEmptyProperty(obj) {
-  return Object.keys(obj)
+  return obj && Object.keys(obj)
     .filter((key) => obj[key] !== null && obj[key] !== undefined)
     .reduce((acc, key) => ({ ...acc, [key]: obj[key] }), {})
 }
