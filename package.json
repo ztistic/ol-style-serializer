@@ -1,6 +1,6 @@
 {
   "name": "ol-style-serializer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This package can serialize OpenLayers style instances into javascript objects, and deserialize javascript objects into OpenLayers style instances.",
   "repository": "https://github.com/ztistic/ol-style-serializer.git",
   "author": {
@@ -11,7 +11,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "publish": "npm publish"
+    "publish": "npm publish",
+    "test": "test.js"
   },
   "dependencies": {
     "ol": "^6.15.1"
