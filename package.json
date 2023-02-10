@@ -12,7 +12,7 @@
   "main": "index.js",
   "scripts": {
     "publish": "npm publish",
-    "test": "test.js"
+    "test": "node test.js"
   },
   "dependencies": {
     "ol": "^6.15.1"
